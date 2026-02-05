@@ -7,6 +7,10 @@
       Lovable - Build apps and websites fast witn, AI | No code app builder
     </title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
   </head>
   <body>
     <header>
@@ -16,16 +20,24 @@
         </a>
 
         <nav>
-          <p>Solutions</p>
-          <p>Resources</p>
+          <p>Solutions <i class="fa-solid fa-angle-down"></i></p>
+          <div class="resources-container">
+            <p>Resources <i class="fa-solid fa-angle-down"></i></p>
+            <div class="resources-options">
+              <a href="#">Discover</a>
+              <a href="#">Blog</a>
+              <a href="#">Partners</a>
+            </div>
+          </div>
+
           <a href="#">Enterprise</a>
           <a href="#">Pricing</a>
           <a href="#">Community</a>
         </nav>
       </div>
       <div class="header-right">
-        <button>Log in</button>
-        <button>Get Started</button>
+        <button class="login-btn">Log in</button>
+        <button class="get-started-btn">Get Started</button>
       </div>
     </header>
   </body>
