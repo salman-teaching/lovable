@@ -16,12 +16,15 @@ body {
 /* header start */
 
 header {
-  background-color: #181818;
+  background-color: #181818e3;
   display: flex;
   justify-content: space-between;
   height: 12vh;
   align-items: center;
   padding: 0 4vw;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
 }
 
 .header-left {
@@ -42,8 +45,6 @@ nav {
   display: flex;
   color: #fcfbf8;
   gap: 20px;
-
-  border: 4px solid #181818;
 }
 
 nav a:hover {
@@ -103,4 +104,35 @@ nav p:hover {
 .resources-container p:hover + .resources-options {
   display: flex;
   flex-direction: column;
+}
+.resources-container p i {
+  transition: rotate 150ms ease-in-out;
+}
+
+.resources-container p:hover i {
+  rotate: 180deg;
+}
+
+/* header end */
+
+/* hero section start */
+main {
+  background-color: #1c1c1c;
+  position: relative;
+  z-index: 999;
+  height: 100vh;
+  border: 2px solid red;
+  overflow: hidden;
+}
+
+main img {
+  width: 100%;
+  position: absolute;
+  z-index: -999;
+  top: 0;
+  scale: 2;
+}
+
+.box {
+  height: 100vh;
 }
